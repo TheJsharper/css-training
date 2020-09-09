@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<!-- 
+- basiert auf FB2, 19.6, S. 475ff. 
+- Änderungen 
+  - body mit min-height:100% (wg. overflow-Problem beim Inhalt)
+  - div { flex: 1 auto } (ohne .wrap, "auto" wg. IE11)
+    siehe pmueller.de/blog/flexbox-ie-versteht-flex1-nicht-richtig.html
+--> 
+<head>
+	<meta charset="utf-8">	
+	<title>Flexbox - flexibles Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+<link rel="stylesheet" href="./multi-container-layout-flexibel.css" type="text/css"/>
+</head>
+<body>
+<header>
+  <h1>Flexibles Layout</h1>
+  <p>Flexbox in Aktion</p>
+</header>
+
+<div class="wrap-content">
+  <main>
+    <h2>Der Inhaltsbereich</h2>
+    <article>Artikel 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</article>
+    <article>Artikel 2. Nur wenig Text.</article>
+    <article>Artikel 3. Phasellus finibus nulla posuere arcu blandit, nec venenatis eros commodo. Praesent non maximus nunc, vitae varius tellus. </article>
+  </main>
+
+  <aside>
+    <h2>Die Side-Bar</h2>
+    <p>Come on in.</p>
+    <p>Happy hour 9 to 5.</p>
+  </aside>
+  
+  <nav>
+    <h2>Die Nav-Bar</h2>
+    <ul>
+      <li>Startseite</li> 
+      <li>Über uns</li> 
+      <li>Kontakt</li> 
+    </ul>
+  </nav>
+
+</div> <!-- Ende div --> 
+  
+<footer>
+  <h2>Footer</h2>
+  <p>Copyright, Impressum und dergleichen mehr</p>
+</footer>
+
+</body>
+</html>

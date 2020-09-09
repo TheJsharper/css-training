@@ -1,0 +1,76 @@
+section{
+display:flex;
+background-color:lightgray;
+display:flex;
+}
+div.container{
+width:90%; display:flex; flex-flow: column wrap;
+}
+.container section article{
+background-color:rgba(20%, 10%, 100%, 0.5);
+margin:0.2%;
+color:white;
+}
+.container #grown-1 article:nth-child(2)
+{
+flex-basis:150px;
+flex-shrink:0;
+flex-grow:0;
+}
+.container #grown-2 article{
+flex-basis:500px;
+flex-shrink:0;
+flex-grow:0;
+}
+.container #grown-3 article{
+flex-basis:150px;
+flex-shrink:0;
+flex-grow:1;
+}
+
+.container #grown-4 article{
+flex-basis:500px;
+flex-shrink:0;
+flex-grow:1;
+}
+
+.container #grown-5 article{
+flex-basis:150px;
+flex-shrink:1;
+flex-grow:0;
+}
+
+.container #grown-6 article{
+flex-basis:15000px;
+flex-shrink:1;
+flex-grow:0;
+}
+
+.container #grown-7 article{
+flex-basis:150px;
+flex-shrink:1;
+flex-grow:1;
+}
+
+
+.container #grown-8 article{
+flex-basis:15000px;
+flex-shrink:1;
+flex-grow:1;
+}
+
+.container #grown-9 article{
+flex-basis:auto;
+flex-shrink:1;
+flex-grow:1;
+}
+
+.container #grown-10 article{
+flex-basis:0%;
+flex-shrink:1;
+flex-grow:1;
+}
+.container section article:hover{
+background-color:rgba(20%, 10%, 100%, 1.0);
+cursor:pointer;
+}

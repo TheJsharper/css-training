@@ -1,0 +1,25 @@
+
+*, *::before, *::after{box-sizing:inherit;}
+body{
+	font-size:1rem/1.5 sans-serif;
+	min-width:320px;
+	padding: 1rem;
+	margin:auto;
+}
+
+.form div{
+	display:flex;
+	flex-flow: wrap;
+}
+.form input, textarea, button{
+	flex:1 20rem;
+}
+label{
+	flex: 0 7rem;
+}
+@media screen and (min-width:464px){
+	button{
+	/*flex:none;*/
+	margin-left:7rem;
+	}
+}

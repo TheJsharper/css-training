@@ -1,0 +1,29 @@
+section{
+display:flex;
+background-color:lightgray;
+display:flex;
+}
+div.container{
+width:90%; display:flex; flex-flow: column wrap;
+}
+.container section article{
+background-color:rgba(20%, 10%, 100%, 0.5);
+margin:0.2%;
+color:white;
+}
+.container #grown-1 article:nth-child(2), 
+.container #grown-2 article:nth-child(3n-6), 
+.container #grown-3 article:nth-child(1), 
+ .container #grown-3 article:nth-child(6),
+ .container #grown-3 article:nth-child(3)
+ {
+flex-grow:2;
+}
+.container section article:hover{
+background-color:rgba(20%, 10%, 100%, 1.0);
+cursor:pointer;
+}
+body{
+/*display:flex;
+flex-flow: row wrap;*/
+}

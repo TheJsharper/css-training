@@ -1,0 +1,25 @@
+.form{
+	display:flex;
+	flex-flow:row wrap;
+	height:1.5%;
+	
+}
+.form input{
+	flex:3
+}
+.form button{
+	flex: 1;
+	background-color:rgba(50%, 50%, 95%, 0.5);
+	color:white;
+}
+.form button:hover{
+	cursor:pointer;
+	background-color:rgba(50%, 50%, 95%, 1);
+}
+body{
+
+	justify-content:center;
+}
+h1{
+	text-align:center;
+}

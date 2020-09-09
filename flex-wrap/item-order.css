@@ -1,0 +1,54 @@
+.container section {
+	display:flex;
+	
+	border: 1px solid lightblue;
+	margin: 0.2%;
+	background-color: rgba(98%, 90%, 10%, 0.2);
+}
+.container section:nth-child(1){
+	/**/max-width:200px;
+}
+.container section:first-child{
+	flex-wrap:wrap;
+}
+.container section:nth-child(2){
+	flex-wrap:nowrap;
+}
+.container section article{
+	background-color: rgba(98%, 90%, 10%, 0.9);
+	margin: 2.1%;
+	color:white;
+	
+}
+.container section:nth-child(1) article:nth-child(1){ order:2}
+.container section:nth-child(1) article:nth-child(2){ order:1}
+.container section:nth-child(1) article:nth-child(3){ order:3}
+.container section:nth-child(1) article:nth-child(4){ order:5}
+.container section:nth-child(1) article:nth-child(5){ order:4}
+.container section:nth-child(1) article:nth-child(6){ order:6}
+
+
+
+.container section:nth-child(2) article:nth-child(1){ order:6}
+.container section:nth-child(2) article:nth-child(2){ order:5}
+.container section:nth-child(2) article:nth-child(3){ order:4}
+.container section:nth-child(2) article:nth-child(4){ order:3}
+.container section:nth-child(2) article:nth-child(5){ order:2}
+.container section:nth-child(2) article:nth-child(6){ order:1}
+
+.container section:nth-child(2) article:nth-child(1){ order:6}
+.container section:nth-child(2) article:nth-child(2){ order:2}
+.container section:nth-child(2) article:nth-child(3){ order:3}
+.container section:nth-child(2) article:nth-child(4){ order:4}
+.container section:nth-child(2) article:nth-child(5){ order:5}
+.container section:nth-child(2) article:nth-child(6){ order:1}
+
+
+.container section article:hover{
+	cursor:pointer;
+	background-color:red;
+}
+.container{
+	display:flex;
+	flex-flow: row wrap;
+}

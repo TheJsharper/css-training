@@ -1,0 +1,62 @@
+/* Basisformatierung */ 
+  html { height: 100%; margin: 0; box-sizing: border-box; }
+  * { box-sizing: inherit; }
+  body { 
+    min-height: 100%; 
+    max-width: 1280px; 
+    font: 1rem/1.5 sans-serif; 
+    padding: 0.5rem; 
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.25rem; }
+  h2 { font-size: 1rem; }
+ .start, .end, .center, .start-reverse, .between, .around{
+	display:flex;
+	height:12rem;
+	list-style-type:none;
+	max-width:55rem;
+	background: rgb(234,232, 232);
+	padding: 1.5%;
+	border: 1px solid rgb(212,212,212);
+	margin:0;
+}
+.start li, .end li, ul.center li, .start-reverse li, .around li, .between li{
+	text-align:center;
+	padding: 1.2%;
+	margin:0.6%;
+	background-color:rgba(90%, 30%, 100%, 0.3);
+	color:white;
+}
+.start li:hover, .end li:hover, .center li:hover, .start-reverse li:hover,  .around li:hover, .between li:hover {
+	cursor:pointer;
+	background-color:rgba(90%, 30%, 100%, 1.5);
+}
+
+
+.start{
+	flex-flow: row;
+	justify-content:flex-start;
+}
+.end{
+	flex-flow: row;
+	justify-content:flex-end;
+}
+.center{
+	flex-flow:row;
+	justify-content:center;
+}
+.start-reverse{
+	flex-flow: row-reverse;
+	justify-content:flex-start;
+}
+.between{
+	flex-flow:row;
+	justify-content:space-between;
+		max-width:85rem;
+}
+
+.around{
+	flex-flow:row;
+	justify-content:space-around;
+	max-width:85rem;
+}

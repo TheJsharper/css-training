@@ -1,0 +1,171 @@
+/* Basisformatierung */ 
+  html { height: 100%; margin: 0; box-sizing: border-box; }
+  * { box-sizing: inherit; }
+  body { 
+    min-height: 100%; 
+    max-width: 1280px; 
+    font: 1rem/1.5 sans-serif; 
+    padding: 0.5rem; 
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.25rem; }
+  h2 { font-size: 1rem; }
+ .start, .end, .center, .start-reverse, .between, .around, .start-stretch, .start-center,
+ .start-end{
+	display:flex;
+	height:12rem;
+	list-style-type:none;
+	max-width:55rem;
+	background: rgb(234,232, 232);
+	padding: 1.5%;
+	border: 1px solid rgb(212,212,212);
+	margin:0;
+}
+.start li, .end li, ul.center li, .start-reverse li, .around li, .between li, .start-stretch li, .start-center li, .start-end li{
+	text-align:center;
+	padding: 1.2%;
+	margin:0.6%;
+	background-color:rgba(90%, 30%, 100%, 0.3);
+	color:white;
+	text-align:center;
+}
+.start li:hover, .end li:hover, .center li:hover, .start-reverse li:hover,  .around li:hover, .between li:hover, .start-stretch li:hover, .start-center li:hover, .start-end li:hover, .start-content-stretch div:hover, .start-content-start div:hover, .start-content-end div:hover, .start-content-center div:hover,.start-content-between div:hover, .start-content-around div:hover {
+	cursor:pointer;
+	background-color:rgba(90%, 30%, 100%, 1.5);
+}
+
+
+.start{
+	flex-flow: row;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+.start-stretch, .start-center, .start-end{
+	flex-flow: row;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+.start-stretch li:nth-child(1), .start-stretch li:nth-child(6), .start-stretch li:nth-child(3){
+	align-self:stretch;
+}
+
+
+.start-center  li:nth-child(1), .start-center  li:nth-child(6), .start-center  li:nth-child(3){
+	align-self:center;
+}
+
+.start-end  li:nth-child(1), .start-end li:nth-child(6), .start-end  li:nth-child(3){
+	align-self:flex-end;
+}
+
+
+.start-content-stretch, .start-content-start, .start-content-end, .start-content-center,
+.start-content-between,.start-content-around{
+	width:40rem;
+	min-height: 15rem;
+	border: 1px solid #333;
+	background-color:rgb(234,232, 232);
+}
+
+.start-content-stretch div, .start-content-start div, .start-content-end div, .start-content-center div,
+.start-content-between div, .start-content-around div{
+	background:rgba(90%, 30%, 100%, 0.3);
+	padding: 0.1%;
+	border-radius: 0.25rem;
+	margin:0.3%;
+	color:white;
+	text-align:center;
+}
+.start-content-stretch div, .start-content-start div, .start-content-end div, .start-content-center div,
+.start-content-between div, .start-content-around div{
+	flex: 1 12rem;
+}
+
+
+.start-content-stretch{
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: stretch;
+	align-items:stretch;
+}
+.start-content-start{
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	align-items:stretch;
+}
+.start-content-end{
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: flex-end;
+	align-items:stretch;
+}
+.start-content-center{
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: center;
+	align-items:stretch;
+}
+
+.start-content-between{
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: space-between;
+	align-items:stretch;
+}
+
+.start-content-around{
+		display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: space-around;
+	align-items:stretch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.end{
+	flex-flow: row;
+	justify-content:flex-end;
+}
+.center{
+	flex-flow:row;
+	justify-content:center;
+}
+.start-reverse{
+	flex-flow: row-reverse;
+	justify-content:flex-start;
+}
+.between{
+	flex-flow:row;
+	justify-content:space-between;
+		max-width:85rem;
+}
+
+.around{
+	flex-flow:row;
+	justify-content:space-around;
+	max-width:85rem;
+}*/

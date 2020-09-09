@@ -1,0 +1,79 @@
+#simple-flex ul{
+			list-style-type:none;
+			max-width:40em;
+			padding: 0.25rem;
+			border: 1px solid lightgray;
+			margin:0;
+			display:flex;
+			height: 140px;
+			margin-left:2px;
+}
+#simple-flex ul li{
+			background-color: lightblue;
+			padding: 5px;
+			margin: 5px 5px;
+			font-size: 25px;
+}
+#simple-flex ul li:hover{
+			cursor: pointer;
+			background-color:red;
+			color:white;
+}
+
+#content-space-around-flex ul, #content-center-flex ul, #even-flex ul, #content-space-between-flex ul, #content-flex-end ul, #content-flex-start ul{
+			list-style-type:none;
+			width:600px;
+			padding: 0.25rem;
+			border: 1px solid lightgray;
+			margin:0;
+			display:flex;
+			margin-left:2px;	
+
+}
+
+
+#content-space-around-flex ul li,  #content-center-flex ul li, #even-flex ul li,  #content-space-between-flex ul li, #content-flex-end ul li, #content-flex-start ul li{
+			background-color: lightblue;
+			padding: 5px;
+			margin: 5px ;
+			font-size: 25px;
+			text-align:center;
+}
+
+#content-space-around-flex  ul li:hover, #content-center-flex ul li:hover, #even-flex  ul li:hover,   #content-space-between-flex ul li:hover, #content-flex-end ul li:hover, #content-flex-start ul li:hover{
+			cursor: pointer;
+			background-color:red;
+			color:white;
+}
+
+#even-flex ul li{		
+			flex:1;
+}
+
+
+#content-space-around-flex ul{
+	justify-content:space-around;	
+}
+#content-center-flex ul {
+	justify-content:center;
+}
+#content-space-between-flex ul{
+	justify-content:space-between;
+}
+#content-flex-end ul{
+	justify-content:flex-end;
+}
+
+#content-flex-start ul {
+	justify-content:flex-start;
+}
+#content-flex-start ul li:last-child {
+	margin-left:auto;
+}
+.container{
+	display:flex;
+	flex-wrap: wrap;
+	width:100%;
+	height:30%;
+}
+
